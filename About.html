@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kiratpal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="column_1">
+                    <img src="me.jpg" alt="" class="about_me">
+                </div>
+                <div class="column_2">
+                    <h1>About Me</h1>
+                    <p class="desc">
+                        Experienced web developer proficient in HTML, CSS, JavaScript, SQL, Node.js, React.js, and
+                        Express.js. A six-month stint as a Class Representative honed my leadership and collaboration
+                        skills. I excel in both front-end and back-end development, ensuring seamless integration and
+                        functionality. Mastery of diverse tools, including Node.js and React.js, is evident in my
+                        personally crafted websites. Passionate about creating engaging online experiences, I bring
+                        innovation and technical prowess to projects, delivering impactful solutions. Eager to
+                        contribute my expertise to dynamic web development endeavors that demand a blend of creativity
+                        and technical acumen.
+                    </p>
+
+                    <div class="titles">
+                        <p class="links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="links" onclick="opentab('experience',event)">Experience</p>
+                        <p class="links" onclick="opentab('education',event)">Education</p>
+                    </div>
+
+                    <div class="contents active-tab" id="skills">
+                        <ul>
+                            <li><span class="front">UI/UX</span><br><span class="next">Designing Web/App
+                                    Interfaces</span></li>
+                            <li><span class="front">Web Development</span><br><span class="next">Designing Web App
+                                    Interfaces</span></li>
+                            <li><span class="front">App Development</span><br><span class="next">Designing App
+                                    Interfaces</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="contents" id="experience">
+                        <!-- Experience -->
+                        <ul>
+                            <li><span class="front">Feb 2024 - March 2024</span><br><span class="next">Web
+                                    Development Intern in Navodita Infotech</span></li>
+                            <!-- <li><span class="front"></span><br><span class="next">Designing Web App
+                                    Interfaces</span></li>
+                            <li><span class="front">App Development</span><br><span class="next">Designing App
+                                    Interfaces</span></li> -->
+
+                        </ul>
+                    </div>
+                    <div class="contents" id="education">
+                        <ul>
+                            <li><span class="front">2019</span><br><span class="next">Completed my 10th From
+                                    Innocent Hearts School, Jalandhar,Punjab - 90.8%</span></li>
+                            <li><span class="front">2021</span><br><span class="next">Completed my 12th with
+                                    Physics, Chemistry and Mathematics as the main subjects from Innocent Hearts
+                                    School, Jalandhar,Punjab - 80%</span></li>
+                            <li><span class="front">2021- current</span><br><span class="next">Pusuing Bachelors of
+                                    Computer Science Engineering From Chandigarh University, Mohali, Punjab -
+                                    7.78 cgpa</span></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                Kiratpal's Developer Portfolio
+            </div>
+            <div class="footer-second">
+
+                <img src="linkedin.png" alt="" class="linkedin">
+                <a target="_blank" href="https://www.linkedin.com/in/kiratpal-singh-kalsey-a92b15230/">linkedin</a>
+
+            </div>
+            <div class="footer-third">
+                <img src="gitpod.png" alt="" class="gitpod">
+                <a target="_blank" href="https://github.com/kiratpal1210">github</a>
+
+            </div>
+            <div class="footer-fourth">
+                <img src="instagram.png" alt="" class="instagram">
+                <a target="_blank" href="https://www.instagram.com/pahul_pb_08/">Instagram</a>
+            </div>
+            <div class="footer-fifth">
+                <img src="facebook.avif" alt="" class="facebook">
+                <a target="_blank" href="https://www.facebook.com/pahul.singh.790/" class="facebook">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; kiratpalsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("links");
+        var tabcontents = document.getElementsByClassName("contents");
+
+        function opentab(tabname, event) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>

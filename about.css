@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(2, 2, 51);
+    /* background-color: rgb(161, 94, 161); */
+
+}
+
+.container {
+    position: relative;
+    top: -50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(163, 163, 225);
+    font-size: 1.04rem;
+}
+
+.column_1 img {
+    height: 450px;
+    display: flex;
+    position: relative;
+    left: 137px;
+    top: 62px;
+}
+
+footer {
+    background-color: #110f14;
+    /* height: 230px; */
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer-second img {
+    height: 20px;
+    position: relative;
+    right: 4.3px;
+}
+
+.footer-third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer-third img {
+    height: 20px;
+    display: flex;
+    position: relative;
+    right: 6px;
+
+}
+
+.footer-fourth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer-fourth img {
+    height: 20px;
+    display: flex;
+    position: relative;
+    right: 4px;
+    top: 0px;
+}
+
+.footer-fifth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer-fifth img {
+    height: 20px;
+    display: flex;
+    position: relative;
+    right: 4px;
+    top: 0px;
+}
+
+
+/* -----------------------------------------------ABOUT------------------------------------------------------------- */
+
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* position: relative;
+            top: -200px;
+            left: 47px; */
+}
+
+.column_1 {
+    flex-basis: 25%;
+}
+
+.column_1 img {
+    width: 100%;
+    border-radius: 17px;
+}
+
+.column_2 {
+    width: 60%;
+}
+
+.column_2 h1 {
+    display: flex;
+    position: relative;
+    top: 55px;
+    right: 42px;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(147, 147, 227);
+}
+
+.desc {
+    display: flex;
+    position: relative;
+    top: 60px;
+    right: 42px;
+}
+
+.titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.titles .links {
+    margin-right: 85px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    top: 56px;
+    left: -42px;
+    color: rgb(147, 147, 227);
+
+}
+
+
+.links:hover {
+    /* content: '';
+            width: 0;
+            height: 3px;
+            background: #51516a;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: 0.5s; */
+    color: rgb(163, 163, 225);
+    font-size: 1.24rem;
+    /* width: 200%; */
+}
+
+/* .links::after{
+            content: '';
+            color: red;
+            width: 0;
+            height: 3px;
+            position: absolute;
+            transition: 0.5s;
+        }
+        .links.active-link::after{
+            width: 50%;
+        } */
+
+.contents ul li {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.front {
+    display: flex;
+    position: relative;
+    top: 29px;
+    right: 42px;
+    color: #ff004f;
+}
+
+.next {
+    display: flex;
+    position: relative;
+    right: 41px;
+    top: 20px
+}
+
+
+.contents {
+    display: none;
+}
+
+.contents.active-tab {
+    display: block;
+}
